@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Divyasri - Web Developer Portfolio. Skilled in HTML, CSS, JavaScript, Python, C, C++ and AI&ML">
+    <meta name="keywords" content="Divyasri, web developer, portfolio, HTML, CSS, JavaScript, Python">
+    <meta name="author" content="Divyasri">
+    <title>Divyasri - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <h1 class="logo">My Portfolio</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-btn" aria-label="Toggle dark mode">🌙</button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <h1>Hello, I'm Divyasri</h1>
+                <p>Web Developer & UI Designer</p>
+                <button onclick="document.getElementById('projects').scrollIntoView()">View Projects</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://cdn-icons-png.flaticon.com/512/6997/6997662.png" alt="Divyasri - Web Developer & UI Designer">
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer interested in creating responsive and modern websites using HTML, CSS, and JavaScript. I also have experience with C and C++ programming languages and Python with AI & ML. I am a quick learner and always eager to learn new technologies and improve my skills. I enjoy working on projects that challenge me and allow me to grow as a developer.</p>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills" id="skills">
+            <h2>My Skills</h2>
+            <div class="skill-container">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">C</div>
+                <div class="skill-card">C++</div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>Responsive personal portfolio website using HTML, CSS and JS.</p>
+                    
+                </div>
+                <div class="project-card">
+                    <h3>Calculator App</h3>
+                    <p>Simple calculator using HTML, CSS and JavaScript.</p>
+                    
+                </div>
+                <div class="project-card">
+                    <h3>Weather App</h3>
+                    <p>Weather checking application using API and JavaScript.</p>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Divyasri Portfolio</p>
+        <div class="social-links">
+            |<a href="https://github.com/Divyasri" target="_blank"aria-label="Github Profile">Github</a>|
+            |<a href="https://linkedin.com/in/divyasri" target="_blank" aria-label="LinkedIn Profile">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
